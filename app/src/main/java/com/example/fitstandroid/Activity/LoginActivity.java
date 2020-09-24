@@ -12,7 +12,7 @@ import android.widget.EditText;
 import com.example.fitstandroid.R;
 import com.example.fitstandroid.Tools.StartActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText username;
     private EditText password;
     private Button login;
