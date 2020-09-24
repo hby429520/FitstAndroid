@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="write">#ffffff</color>
+    <color name="blue">#33CCFF</color>
+    <color name="btu_login">#39392d</color>
+    <color name="input_user">#f5f5f5</color>
+    <color name="line">#8e8e81</color>
+</resources>
