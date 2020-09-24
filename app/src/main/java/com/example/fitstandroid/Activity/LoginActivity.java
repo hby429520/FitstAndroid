@@ -30,6 +30,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         login.setOnClickListener(this);
         startActivity = new StartActivity();
 
+
+
+
     }
     @Override
     public void onClick(View view) {
