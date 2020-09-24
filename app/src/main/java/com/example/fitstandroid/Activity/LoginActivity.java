@@ -29,18 +29,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         login = findViewById(R.id.login);
         login.setOnClickListener(this);
         startActivity = new StartActivity();
-
-
-
-
     }
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-
-
-
-
             case R.id.login:
                 login();break;
             case R.id.sign:
