@@ -12,6 +12,14 @@ import android.widget.EditText;
 import com.example.fitstandroid.R;
 import com.example.fitstandroid.Tools.StartActivity;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText username;
     private EditText password;
@@ -34,12 +42,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.login:
-                login();break;
+                try {
+                    login();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                break;
             case R.id.sign:
                 startActivity.startactivity(context,SignActivity.class);
         }
     }
-    public void login(){
+    public void login() throws IOException {
         System.out.println(username.getText());
         System.out.println(password.getText());
     }
