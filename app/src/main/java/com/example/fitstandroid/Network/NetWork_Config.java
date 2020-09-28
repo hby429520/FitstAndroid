@@ -1,10 +1,14 @@
 package com.example.fitstandroid.Network;
 
 public class NetWork_Config {
+    /**
+     * @SERVICE_URL  服务器地址
+     * @CONNECT_TIMEOUT 连接超时时间
+     * @READ_TIMEOUT 读取超时时间
+     */
     private String SERVICE_URL;
-    private int REQUEST_TIMEOUT;
-    private int SO_TIMEOUT;
-    private int type;
+    private int CONNECT_TIMEOUT;
+    private int READ_TIMEOUT;
 
     public String getSERVICE_URL() {
         return SERVICE_URL;
@@ -14,27 +18,19 @@ public class NetWork_Config {
         this.SERVICE_URL = SERVICE_URL;
     }
 
-    public int getREQUEST_TIMEOUT() {
-        return REQUEST_TIMEOUT;
+    public int getCONNECT_TIMEOUT() {
+        return CONNECT_TIMEOUT;
     }
 
-    public void setREQUEST_TIMEOUT(int REQUEST_TIMEOUT) {
-        this.REQUEST_TIMEOUT = REQUEST_TIMEOUT;
+    public void setCONNECT_TIMEOUT(int CONNECT_TIMEOUT) {
+        this.CONNECT_TIMEOUT = CONNECT_TIMEOUT;
     }
 
-    public int getSO_TIMEOUT() {
-        return SO_TIMEOUT;
+    public int getREAD_TIMEOUT() {
+        return READ_TIMEOUT;
     }
 
-    public void setSO_TIMEOUT(int SO_TIMEOUT) {
-        this.SO_TIMEOUT = SO_TIMEOUT;
-    }
-
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
+    public void setREAD_TIMEOUT(int READ_TIMEOUT) {
+        this.READ_TIMEOUT = READ_TIMEOUT;
     }
 }

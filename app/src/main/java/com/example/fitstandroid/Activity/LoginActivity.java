@@ -3,7 +3,6 @@ package com.example.fitstandroid.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,13 +11,7 @@ import android.widget.EditText;
 import com.example.fitstandroid.R;
 import com.example.fitstandroid.Tools.StartActivity;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText username;
@@ -30,7 +23,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         System.err.println("create");
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         context=this;
         username = findViewById(R.id.phone);
         password = findViewById(R.id.apc);
