@@ -9,7 +9,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
-public class NET_request {
+public class
+NET_request {
     private static NET_request net_request;
     private static String json;
     Retrofit retrofit;
